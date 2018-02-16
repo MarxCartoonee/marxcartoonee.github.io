@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Koch Original';
+	src: url(../res/KochOriginal-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Koch Original';
+	src: url(../res/KochOriginal-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Koch Original';
+	src: url(../res/KochOriginalLight-Regular.ttf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Koch Original';
+	src: url(../res/KochOriginalHeavy-Regular.ttf);
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Koch Original Condensed';
+	src: url(../res/KochOriginalCond-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Koch Original Condensed';
+	src: url(../res/KochOriginalCond-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Koch Modern';
+	src: url(../res/KochModern-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Koch Modern';
+	src: url(../res/KochModern-Bold.ttf);
+	font-weight: bold;
+}

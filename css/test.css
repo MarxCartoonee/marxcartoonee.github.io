@@ -1,0 +1,30 @@
+body {
+	background-color: #dfdf46;
+	display: block;
+	flex-wrap: nowrap;
+	width: 960PX;
+	margin: 0 auto;
+}
+
+h1 {
+	width: 50%;
+	margin: 50px auto;
+	padding: 3ex;
+	text-align: center;
+	border: 5px dotted transparent;
+	background-image: linear-gradient(red, red), linear-gradient(green, green), linear-gradient(blue, blue);
+	background-clip: content-box, padding-box, border-box;
+}
+
+div {
+	flex-basis: 25%;
+}
+
+aside {
+	text-align: center;
+	flex-grow: 2;
+}
+
+img {
+	
+}
