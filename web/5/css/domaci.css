@@ -79,14 +79,16 @@ header {
 
 .header-wrapper a.logo {
 	display: block;
-	width: 20%;
+	width: 17%;
 	margin-right: 2ex;
+	background: url(../img/SVG/aria-logo.svg) 0 0 no-repeat;
+	background-size: contain;
 }
 
-.header-wrapper a.logo img {
+/*.header-wrapper a.logo img {
 	height: 100%;
 	width: auto;
-}
+}*/
 
 /* Nav */
 .nav-wrapper {
@@ -104,6 +106,7 @@ header {
 
 /* Contacts */
 .contact-nav, .socials {
+	margin-top: 1ex;
 	font-size: 21px;
 }
 
@@ -290,10 +293,10 @@ section.bookings {
 
 /* Staff */
 section.staff {
-	background-image: url(../img/SVG/stripes.svg), url(../img/SVG/stripes.svg), radial-gradient(ellipse farthest-corner at top right, #F0F0F4, #D7D9EC);
+	background-image: url(../img/stripes.png), url(../img/stripes.png), radial-gradient(ellipse farthest-corner at top right, #F0F0F4, #D7D9EC);
 	background-attachment: scroll;
 	background-position: 0 20%, 0 40%, 0 0;
-	background-size: 150px, 150px, contain;
+	background-size: 1px 100px, 1px 100px, contain;
 	background-repeat: repeat-x, repeat-x, no-repeat;
 }
 
@@ -451,4 +454,10 @@ footer {
 	border-radius: 1em;
 	font-family: Arial, sans-serif;
 	font-size: .9em;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+.footer-wrapper form textarea {
 }
