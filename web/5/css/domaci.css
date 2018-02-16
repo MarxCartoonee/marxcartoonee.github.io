@@ -293,11 +293,11 @@ section.bookings {
 
 /* Staff */
 section.staff {
-	background-image: url(../img/stripes.png), url(../img/stripes.png), radial-gradient(ellipse farthest-corner at top right, #F0F0F4, #D7D9EC);
+	background-image: radial-gradient(ellipse farthest-corner at top right, #F0F0F4, #D7D9EC);
 	background-attachment: scroll;
-	background-position: 0 20%, 0 40%, 0 0;
-	background-size: 1px 100px, 1px 100px, contain;
-	background-repeat: repeat-x, repeat-x, no-repeat;
+	background-position: 0 0;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 /* Zadatak */
@@ -314,6 +314,27 @@ section.staff {
 	flex-basis: 100%;
 	text-align: center;
 	margin-top: 3.5em;
+	position: relative;
+}
+
+.staff-wrapper h1::before, .staff-wrapper h1::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: url(../img/stripes.png) 0 0 repeat-x;
+	background-size: contain;
+}
+
+.staff-wrapper h1::before {
+	top: -1.75em;
+}
+
+.staff-wrapper h1::after {
+	bottom: -1.75em;
 }
 
 .staff-wrapper .staff{
