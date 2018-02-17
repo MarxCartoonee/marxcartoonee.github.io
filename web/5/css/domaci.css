@@ -298,6 +298,7 @@ section.staff {
 	background-position: 0 0;
 	background-size: contain;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 /* Zadatak */
@@ -313,18 +314,17 @@ section.staff {
 .staff-wrapper h1 {
 	flex-basis: 100%;
 	text-align: center;
-	margin-top: 3.5em;
+	margin-top: 2em;
 	position: relative;
 }
 
 .staff-wrapper h1::before, .staff-wrapper h1::after {
 	content: '';
+	display: block;
 	position: absolute;
-	width: 100%;
+	width: 200vw;
 	height: 100px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
+	left: -100vw;
 	background: url(../img/stripes.png) 0 0 repeat-x;
 	background-size: contain;
 }
@@ -346,7 +346,6 @@ section.staff {
 	border-radius: 10px;
 	position: relative;
 	top: -40px;
-	box-shadow: 0 0 1em #D7D9EC;
 }
 
 .staff-wrapper .staff::before {
@@ -477,8 +476,4 @@ footer {
 	font-size: .9em;
 	width: 100%;
 	box-sizing: border-box;
-
-}
-
-.footer-wrapper form textarea {
 }
