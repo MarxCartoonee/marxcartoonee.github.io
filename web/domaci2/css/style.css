@@ -1,0 +1,160 @@
+
+/* Globals */
+html {
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Grid */
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+
+.content-wrapper {
+	width: 70%;
+	max-width: 1280px;
+	flex-flow: row wrap;
+}
+
+.w {
+	box-sizing: border-box;
+	margin: 0 20px;
+}
+
+.w0 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.w1 {
+	width: calc(100% - 40px);
+}
+
+.w2 {
+	width: calc(100% / 2 - 40px);
+}
+
+.w3 {
+	width: calc(100% / 3 - 40px);
+}
+/* End Grid */
+/* End Globals */
+.article-wrapper.opened {
+	transition: width .4s;
+}
+
+.article-wrapper {
+	margin-bottom: 2em;
+	position: relative;
+	/* Ordering for JS */
+	order: 2;
+}
+
+.opened {
+	order: 1;
+}
+/* End Ordering for JS */
+.article-wrapper aside {
+	overflow: hidden;
+	max-height: 400px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.article-wrapper article {
+	background-color: #fff;
+	width: 90%;
+	max-width: 960px;
+	padding: 2% 5% 7%;
+	position: relative;
+	top: -50px;
+	box-shadow: 0 0 5px gray;
+}
+
+.article-wrapper article h1 {
+	margin-top: 5%;
+}
+
+.article-wrapper article p, .article-wrapper article span {
+	display: block;
+	margin-bottom: 5%;
+}
+
+.article-wrapper article p {
+	line-height: 1.25em;
+}
+
+.article-wrapper article::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.circle {
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+img.circle {
+	max-width: 70px;
+	border: 5px solid white;
+}
+
+img.post-author {
+	float: right;
+	margin: 0 20px 20px;
+}
+
+/* Small Titles */
+.article-wrapper.w3 {
+	box-shadow: 0 0 5px gray;
+}
+
+.article-wrapper.w3 article {
+	box-shadow: none;
+}
+
+.article-wrapper.w3 > * {
+	margin: 0 auto;
+}
+
+.article-wrapper.w3 aside {
+	height: 150px;
+	cursor: pointer;
+}
+
+.article-wrapper.w3 article {
+	top: 0;
+	height: 100px;
+}
+
+.article-wrapper.w3 h1 {
+	margin-top: 15%;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.article-wrapper.w3 p,.article-wrapper.w3 span {
+	display: none;
+}
+
+.article-wrapper.w3 img.post-author {
+	float: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: calc(100px - (70px / 2));
+	margin: 0 auto;
+}
+
+/* End Small Titles */

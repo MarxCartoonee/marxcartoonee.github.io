@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title></title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="wrapper content-wrapper">
+				<div class="w w0 article-wrapper opened" id="post-1">
+					<aside class="w w0" onclick="toggleMe(this)">
+						<img src="img/article-header-1.jpg" alt="" class="w w0 article-image">
+					</aside>
+					<article class="w w0">
+						<h1 class="w w0">Ham hock picanha tenderloin</h1>
+						<span class="w w0 post-date">Feb 22, 2018</span>
+						<p class="w w0">Bacon ipsum dolor amet meatloaf doner chicken burgdoggen swine pancetta ribeye ham hock prosciutto ball tip hamburger shank sausage filet mignon turkey. Biltong meatball sausage, flank venison drumstick cow turkey cupim landjaeger swine salami prosciutto. Brisket flank boudin, filet mignon short loin corned beef ham beef ribs sausage jerky chuck salami pork belly capicola. Rump pork chop chuck, hamburger pancetta pork loin meatloaf short loin ham swine meatball. Short loin kevin bacon rump. Short loin kevin cow sirloin.</p>
+						<img src="img/post-author-1.jpg" alt="" class="circle post-author">
+						<span class="w w0"><a href="#">Leave a comment</a></span>
+					</article>
+				</div>
+
+				<div class="w w3 article-wrapper" id="post-2">
+					<aside class="w w0" onclick="toggleMe(this)">
+						<img src="img/article-header-2.jpg" alt="" class="w w0 article-image">
+					</aside>
+					<article class="w w0">
+						<h1 class="w w0">Pork loin bacon andouille</h1>
+						<span class="w w0 post-date">Feb 3, 2018</span>
+						<p class="w w0">Ham hock picanha tenderloin bacon short loin burgdoggen filet mignon. T-bone ground round beef chuck spare ribs shankle hamburger brisket meatloaf frankfurter shoulder. Biltong brisket fatback frankfurter shoulder pastrami venison meatball buffalo strip steak. Beef sausage pig, hamburger chicken brisket strip steak cupim leberkas turducken pancetta beef ribs short ribs ground round rump. Bresaola sirloin pork loin, beef ribs salami rump swine capicola turducken t-bone ham. Brisket capicola shoulder cow. Picanha tail pastrami tongue frankfurter shankle, flank bresaola capicola sirloin corned beef.</p>
+						<img src="img/post-author-2.jpg" alt="" class="circle post-author">
+						<span class="w w0"><a href="#">Leave a comment</a></span>
+					</article>
+				</div>
+
+				<div class="w w3 article-wrapper" id="post-3">
+					<aside class="w w0" onclick="toggleMe(this)">
+						<img src="img/article-header-3.jpg" alt="" class="w w0 article-image">
+					</aside>
+					<article class="w w0">
+						<h1 class="w w0">Biltong meatball sausage</h1>
+						<span class="w w0 post-date">Feb 2, 2018</span>
+						<p class="w w0">Pork loin bacon andouille porchetta alcatra chicken. Tenderloin jowl porchetta, tail tongue venison leberkas turducken shoulder pork loin. Hamburger spare ribs rump ham hock andouille alcatra shank brisket tongue. Meatball pastrami andouille shankle. Meatloaf bacon sausage landjaeger porchetta.</p>
+						<img src="img/post-author-2.jpg" alt="" class="circle post-author">
+						<span class="w w0"><a href="#">Leave a comment</a></span>
+					</article>
+				</div>
+			
+				<div class="w w3 article-wrapper" id="post-4">
+					<aside class="w w0" onclick="toggleMe(this)">
+						<img src="img/article-header-4.jpg" alt="" class="w w0 article-image">
+					</aside>
+					<article class="w w0">
+						<h1 class="w w0">T-bone ground round beef chuck</h1>
+						<span class="w w0 post-date">Feb 1, 2018</span>
+						<p class="w w0">Kielbasa bresaola venison, doner fatback chicken drumstick corned beef tongue short loin ribeye. Short ribs bresaola frankfurter pork pork loin, sirloin beef pastrami. Shankle tail jowl pig meatloaf ground round, shoulder ham landjaeger spare ribs. Chicken prosciutto strip steak ham hock pork loin cupim swine buffalo bacon brisket turducken shank. Shank pork short loin kielbasa spare ribs venison frankfurter cow fatback tongue andouille. Venison tongue t-bone meatball pork belly leberkas boudin swine sausage pastrami chuck landjaeger.</p>
+						<img src="img/post-author-2.jpg" alt="" class="circle post-author">
+						<span class="w w0"><a href="#">Leave a comment</a></span>
+					</article>
+				</div>
+			</section>
+		</div>
+
+		<script type="text/javascript">
+			function toggleMe(thisElement) {
+				var opened = document.querySelectorAll("div.opened");
+				var myself = thisElement.parentElement;
+
+				if (myself != opened[0]) {
+					opened[0].classList.toggle("w0");
+					opened[0].classList.toggle("w3");
+					opened[0].classList.toggle("opened");
+					myself.classList.toggle("w0");
+					myself.classList.toggle("w3");
+					myself.classList.toggle("opened");
+				}
+			}
+		</script>
+	</body>
+</html>
