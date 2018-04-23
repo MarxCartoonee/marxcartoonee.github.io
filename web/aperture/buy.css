@@ -1,0 +1,112 @@
+.row { float: left; clear: both; width: 100%; }
+
+.container .column { float: left; padding: 1em; }
+
+.container, .column.one, .column.two, .column.three, .column.four, .column.five, .column.six, .column.seven, .column.eight, .column.nine, .column.ten, .column.eleven, .column.twelve, .column.thirteen, .column.fourteen, .column.fifteen, .column.sixteen { width: 100%; }
+
+@media only screen and (min-width: 545px) { .cert .column.eight { width: 50%; } }
+@media only screen and (min-width: 768px) { body { font-size: 1em; /* 16 / 16 */ line-height: 1.5em; }
+  .container { width: 90%; margin: 0 auto; }
+  .column.one, .column.two, .column.three, .column.four { width: 33.33%; }
+  .column.five, .column.six, .column.seven, .column.eight { width: 50%; }
+  .column.nine, .column.ten, .column.eleven, .column.twelve { width: 66.66%; }
+  .column.thirteen, .column.fourteen, .column.fifteen, .column.sixteen, .column.twelve .column.eight { width: 100%; } }
+@media only screen and (min-width: 1024px) { body { font-size: 1em; /* 16 / 16 */ line-height: 1.5em; }
+  .container { width: 90%; margin: 0 auto; }
+  .container .column.one { width: 6.25%; }
+  .container .column.two { width: 12.5%; }
+  .container .column.three { width: 18.75%; }
+  .container .column.four { width: 25%; }
+  .container .column.five { width: 31.25%; }
+  .container .column.six { width: 37.5%; }
+  .container .column.seven { width: 43.75%; }
+  .column.twelve .column.eight, .container .column.eight { width: 50%; }
+  .container .column.nine { width: 56.25%; }
+  .container .column.ten { width: 62.5%; }
+  .container .column.eleven { width: 68.75%; }
+  .container .column.twelve { width: 75%; }
+  .container .column.thirteen { width: 81.25%; }
+  .container .column.fourteen { width: 87.5%; }
+  .container .column.fifteen { width: 93.75%; }
+  .container .column.sixteen { width: 100%; } }
+html.lt-ie9 { max-width: 600px; margin: 0 auto; position: relative; }
+
+@font-face { font-family: AperUCB; src: url(res/Univers-CondensedBold.otf); }
+@font-face { font-family: AperZur; src: url(res/TT0296M.TTF); }
+/* global */
+@-ms-viewport { width: device-width; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+
+html { font: 100%/1.5em Tahoma,Arial,sans-serif; height: 100%; position: relative; }
+
+body { color: #313131; background-color: #a8bcc0; background-image: url(img/logo_bg.png), radial-gradient(ellipse, #edf5f5 30%, rgba(0, 0, 0, 0) 100%); background-position: center right, center center; background-size: contain, 100% 100%; background-repeat: no-repeat, no-repeat; background-attachment: scroll, fixed; height: 100%; }
+
+a { text-decoration: none; font-weight: bold; color: #e38b23; }
+
+a:visited { color: #e38b23; }
+
+a:hover { color: #1c74dc; }
+
+h1 { font-size: 1.75em; margin: .2em; text-align: center; }
+
+h2 { font-size: 1em; float: right; clear: both; margin: .2em; }
+
+hr { border: none; margin: .5em auto .3em; padding: 1px; background: black; clear: both; position: relative; }
+
+hr:before { content: ""; display: block; width: 123px; height: 31px; position: absolute; left: 1em; top: -33px; background: transparent url(img/logo_mini.png) 0 0 no-repeat; opacity: .6; }
+
+/* end globals */
+.container { width: 100%; margin: 0 auto; }
+
+/* form */
+fieldset { border: 1px solid black; border-radius: .5em; margin-bottom: .75em; padding: .5em; background-color: rgba(255, 255, 255, 0.5); }
+
+legend { font-family: AperZUR; font-weight: bold; border: 2px solid #e38b23; border-radius: .2em; padding: 0 .2em; margin-left: .2em; background: #e38b23 -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(50%, transparent)) 0 0 repeat-x; background: #e38b23 linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, transparent 50%) 0 0 repeat-x; }
+
+label, input, div.select { display: block; float: left; height: 2em; margin-bottom: .2em; }
+
+label { clear: left; text-align: right; font-size: .75em; }
+
+input, div.select { border: 1px solid black; border-radius: .25em; background-color: rgba(255, 255, 255, 0.6); margin-left: 2%; }
+
+input { padding-left: .5em; }
+
+div.select select { background: transparent; border: 0; border-radius: 0; margin: 0; padding: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; position: absolute; width: 100%; height: 100%; /*overflow: hidden;*/ }
+
+div.select { overflow: hidden; position: relative; }
+
+div.arrow { width: 0; height: 0; border-top: 5px solid black; border-left: 5px solid transparent; border-right: 5px solid transparent; position: absolute; margin-top: auto; margin-bottom: auto; top: 0; bottom: 0; right: .5em; pointer-events: none; }
+
+fieldset[name="info"] label { width: 23%; }
+
+fieldset[name="info"] input, fieldset[name="info"] div.select { width: 75%; }
+
+fieldset[name="referral"] div.select { width: 98%; }
+
+fieldset[name="card"] label { width: 42%; }
+
+fieldset[name="card"] input, fieldset[name="card"] div.select { width: 56%; }
+
+input[type="submit"] { border: 2px solid #e38b23; border-radius: .5em; padding: 0 .2em; margin: 0 auto; float: none; font-family: AperUCB; font-size: 1.25em; background: #e38b23 -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), color-stop(50%, transparent)) 0 0 repeat-x; background: #e38b23 linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, transparent 50%) 0 0 repeat-x; }
+
+input[type="submit"]:hover { background-color: #1c74dc; border-color: #1c74dc; color: white; }
+
+/* end form */
+@media only screen and (min-width: 768px) { body { padding-top: 2em; }
+  .container { width: 90%; max-width: 60em; }
+  h1 { text-align: left; margin-left: .5em; }
+  fieldset { padding: 1em 5em; }
+  label, input, div.select { margin-bottom: .5em; }
+  label { font-size: 1em; }
+  fieldset[name="info"] label { width: 20%; }
+  fieldset[name="info"] input, fieldset[name="info"] div.select { width: 78%; }
+  fieldset[name="info"] input[name="zip"] { width: 20%; }
+  fieldset[name="info"] label[for="country"] { width: 15%; }
+  fieldset[name="info"] div.select { width: 41%; }
+  fieldset[name="card"] label { width: 30%; }
+  fieldset[name="card"] input { width: 68%; }
+  fieldset[name="card"] input[name="expm"], fieldset[name="card"] input[name="expy"], fieldset[name="card"] input[name="code"], fieldset[name="card"] div.select { width: 20%; }
+  fieldset[name="card"] label[for="expy"], fieldset[name="card"] label[for="type"] { width: 26%; }
+  fieldset[name="info"] label[for="country"], fieldset[name="card"] label[for="expy"], fieldset[name="card"] label[for="type"] { clear: none; } }
+@media only screen and (min-width: 1024px) { fieldset { width: 45%; padding: 1em 2em; margin: 0 2.5% .75em; }
+  fieldset:first-child { float: left; } }
