@@ -143,6 +143,17 @@ ul.main-nav {
     text-indent: 3ex;
 }
 
+.content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e78b2c;
+}
+
+.content a:hover {
+    color: #00a8ff;
+    text-decoration: underline;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
