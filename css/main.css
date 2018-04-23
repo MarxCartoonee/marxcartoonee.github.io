@@ -138,6 +138,10 @@ ul.main-nav {
     overflow: hidden;
 }
 
+.content dl {
+    font-family: Lato;
+}
+
 .content dl dt:not(:first-of-type) {
     padding-top: 1rem;
     border-top: 2px solid black;
