@@ -1,0 +1,122 @@
+﻿div#body {
+margin: 0 auto;
+width: 800px;
+height: auto;
+}
+div#banner{
+padding: 7px 0;
+height:100px;
+border-bottom: 3px solid black;
+}
+div#banner a{
+background:url(../img/banner.gif) center left no-repeat;
+text-decoration:none;
+display:block;
+height:100px;
+}
+div#banner span{
+font-size: 50pt;
+font-weight: bold;
+font-family: Tahoma;
+padding-left: 100px;
+color: #e78b2c;
+text-shadow:2px -2px 1px black;
+}
+div#content{
+border-bottom: 3px solid black;
+}
+div#content p{
+font-family: Verdana;
+font-size: 11pt;
+margin: 20px 5px;
+}
+div#copy{
+padding-top: 2px;
+font-family: Verdana;
+font-size: 8pt;
+text-align: right;
+}
+img#artist{
+float: right;
+padding: 5px;
+margin: 5px;
+border: 2px solid #e78b2c;
+}
+div#gallery{
+margin-top: 10px;
+padding: 0 5px 5px 5px;
+border-bottom: 3px solid black;
+color: #e78b2c;
+}
+div#minigal{
+text-align: center;
+}
+div#gallery a{
+font-size: 11pt;
+font-family: Tahoma;
+font-weight: bold;
+text-align: left;
+color: gray;
+text-decoration: none;
+}
+div#gallery a:hover{
+color: #e78b2c;
+text-decoration: underline;
+}
+a img#gallery{
+border: 5px dashed gray;
+margin: 15px
+}
+a img#gallery:hover{
+border: 5px dashed #e78b2c;
+}
+hr{
+border: 0;
+height:3px;
+color: black;
+background-color: black;
+}
+h1{
+font-size: 22pt;
+font-family: Tahoma;
+color: #e78b2c;
+}
+h2{
+font-size: 18pt;
+font-family: Tahoma;
+color: #e78b2c;
+}
+h3{
+font-size: 13pt;
+font-family: Tahoma;
+color: #e78b2c;
+margin: 2px;
+}
+table#contact{
+margin: 10px 5px;
+}
+table#contact th{
+font-size: 13pt;
+font-family: Tahoma;
+text-align: left;
+color: #e78b2c;
+}
+table#contact td{
+font-size: 11pt;
+font-family: Tahoma;
+text-align: left;
+}
+table#contact td a{
+text-decoration: none;
+color: gray;
+}
+table#contact td a:hover{
+color: #e78b2c;
+text-decoration: underline;
+}
+table#contact td.type{
+font-size: 10pt;
+font-weight: bold;
+font-family: Tahoma;
+text-align: right;
+}
