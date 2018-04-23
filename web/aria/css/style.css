@@ -1,0 +1,610 @@
+/* Main colors #3C69AF #FDB353 */
+
+
+/* Background colors #F0F0F4 #D7D9EC */
+
+
+/* Additional colors #44C0C2 */
+
+
+/* Globals */
+
+html {
+    min-height: 100%;
+}
+
+body {
+    color: #3C69AF;
+    background-color: #F0F0F4;
+    font-family: 'Koch Original', sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #FDB353;
+}
+
+h1,
+h2,
+h3 {
+    display: block;
+    font-family: 'Koch Original', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 0 0 1ex #F0F0F4;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+p {
+    margin: 2em 0;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 11ex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* End Globals */
+
+
+/* Grid */
+
+.w {
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+
+.w1 {
+    width: calc(100% - 20px);
+}
+
+.w2 {
+    width: calc(50% - 20px);
+}
+
+
+/* End Grid */
+
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F0F0F4;
+    box-shadow: 0 0 1em #D7D9EC;
+    z-index: 3;
+}
+
+.header-wrapper {
+    flex-wrap: nowrap;
+}
+
+.header-wrapper a.logo {
+    display: block;
+    width: 17%;
+    margin-right: 2ex;
+    background: url(../img/SVG/aria-logo.svg) 0 0 no-repeat;
+    background-size: contain;
+}
+
+
+/*.header-wrapper a.logo img {
+	height: 100%;
+	width: auto;
+}*/
+
+
+/* Nav */
+
+.nav-wrapper {
+    align-items: flex-end;
+    padding: 0;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li,
+ul.socials li {
+    display: inline-block;
+}
+
+
+/* Contacts */
+
+.contact-nav,
+.socials {
+    margin-top: 1ex;
+    font-size: 18px;
+}
+
+.contact-nav ul li {
+    margin-right: 2ex;
+}
+
+.contact-nav ul li i {
+    margin-right: 1ex;
+    color: #FDB353;
+}
+
+.contact-nav ul li a {
+    transition: color .2s;
+}
+
+
+/* Contacts */
+
+
+/* Socials */
+
+.socials {
+    flex-grow: 2;
+    text-align: right;
+}
+
+.socials li a {
+    padding: 0 1ex;
+    transition: color .2s;
+}
+
+.socials li a:hover {
+    color: #FDB353;
+}
+
+
+/* End Socials */
+
+
+/* Main Nav */
+
+.main-nav {
+    flex-basis: 100%;
+    margin-top: 2ex;
+}
+
+.main-nav ul li {
+    flex-basis: 20%;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul li:not(:last-of-type) {
+    border-right: 2px solid #3C69AF;
+}
+
+.main-nav ul li a {
+    padding: 1ex 0;
+    flex-basis: 100%;
+    text-align: center;
+    transition: letter-spacing .4s, background-color .4s;
+}
+
+.main-nav ul li a:hover {
+    color: #3C69AF;
+    background-color: #D7D9EC;
+    letter-spacing: .25ex;
+}
+
+
+/* End Main Nav */
+
+
+/* End Nav */
+
+
+/* End Header */
+
+
+/* Home/Landing */
+
+section.landing,
+section.home {
+    background-image: url('../img/neo-venezia-1.jpg');
+}
+
+section.home {
+    background-image: url('../img/akari-3.png'), url('../img/neo-venezia-1.jpg');
+    background-size: auto 90%, cover;
+    background-position: bottom right, center center;
+}
+
+section.landing h1 {
+    margin-bottom: 5em;
+    color: #F0F0F4;
+    text-shadow: 0 0 1ex #3C69AF;
+    opacity: .75;
+}
+
+
+/* End Home/Landing */
+
+
+/* Tours */
+
+section.tours {
+    background-image: url('../img/akari-1.png'), url('../img/neo-venezia-2.jpg');
+    background-size: auto 90%, cover;
+    background-position: bottom right, center center;
+}
+
+.tours-wrapper {
+    flex-direction: column;
+}
+
+section.tours h2,
+section.tours p {
+    color: #F0F0F4;
+    padding: 20px;
+    background-color: #3C69AF;
+    line-height: 1.5em;
+    border-radius: 15px;
+    opacity: 0.75;
+}
+
+section.tours h2 {
+    margin-top: 2em;
+}
+
+section.tours hr {
+    height: 1em;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border: none;
+    background: url(../img/SVG/bullet.svg) center center repeat-x;
+    background-size: contain;
+}
+
+
+/* End Tours */
+
+
+/* Bookings */
+
+section.bookings {
+    background-image: url('../img/neo-venezia-3.jpg')
+}
+
+
+/* Zadatak: Tabela */
+
+.table-wrapper {
+    position: relative;
+    margin: 0 20px;
+    flex-direction: row;
+}
+
+.table-wrapper::before {
+    content: '';
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: #F0F0F4;
+    border-radius: 15px;
+    opacity: .75;
+}
+
+.table-wrapper>* {
+    z-index: 2;
+}
+
+.table-wrapper table,
+.table-wrapper div {
+    text-align: left;
+    margin: 20px 10px;
+}
+
+.table-wrapper p,
+.table-wrapper h2 {
+    margin: 20px 0;
+}
+
+.table-wrapper .not-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.table-wrapper div.img {
+    mask-image: url(../img/SVG/gondola.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+    background-color: #3C69AF;
+}
+
+.table-wrapper table tr {
+    position: relative;
+    background-color: #F0F0F4;
+}
+
+.table-wrapper table thead tr {
+    background-color: #44C0C2;
+}
+
+.table-wrapper table tr th {
+    font-weight: bold;
+}
+
+.table-wrapper table tbody {
+    background-color: #F0F0F4;
+}
+
+.table-wrapper table tbody tr:nth-child(odd) {
+    background-color: rgba(68, 192, 194, 0.5);
+}
+
+.table-wrapper table tr th,
+.table-wrapper table tr td {
+    text-align: left;
+    padding: 1ex 2ex;
+}
+
+.table-wrapper table tbody tr td:not(:first-child),
+.table-wrapper table thead tr th:not(:first-child) {
+    text-align: right;
+}
+
+.table-wrapper table tbody tr th:nth-child(even),
+.table-wrapper table tr td:nth-child(even) {
+    background-color: rgba(60, 105, 175, 0.5);
+    color: #F0F0F4;
+}
+
+
+/* End Zadatak: Tabela */
+
+
+/* End Bookings */
+
+
+/* Staff */
+
+section.staff {
+    background-image: radial-gradient(ellipse farthest-corner at top right, #F0F0F4, #D7D9EC);
+    background-attachment: scroll;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/* Zadatak: Krug */
+
+.staff-wrapper {
+    height: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.staff-wrapper h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 2em;
+    position: relative;
+}
+
+.staff-wrapper h1::before,
+.staff-wrapper h1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200vw;
+    height: 100px;
+    left: -100vw;
+    background: url(../img/stripes.png) 0 0 repeat-x;
+    background-size: contain;
+}
+
+.staff-wrapper h1::before {
+    top: -1.75em;
+}
+
+.staff-wrapper h1::after {
+    bottom: -1.75em;
+}
+
+.staff-wrapper .staff {
+    flex-basis: 20%;
+    box-sizing: border-box;
+    padding: 3em 2ex 1em;
+    background-color: #F0F0F4;
+    border: 2px solid #3C69AF;
+    border-radius: 10px;
+    position: relative;
+    top: -40px;
+}
+
+.staff-wrapper .staff::before {
+    content: '';
+    display: block;
+    background: url(../img/SVG/symbol.svg) center center no-repeat;
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    bottom: -150px;
+    margin: 0 auto;
+}
+
+.staff-wrapper .staff p {
+    margin: 0;
+}
+
+.staff-wrapper .staff .staffer {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #3C69AF;
+    border-radius: 50%;
+    background-color: #3C69AF;
+    background-position: center middle;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    top: -42.5px;
+    right: 0;
+    left: 0;
+    transition: border-radius .2s;
+}
+
+.staff-wrapper .staff .staffer#Ai-Chan {
+    background-image: url(../img/commenter-1.jpg)
+}
+
+.staff-wrapper .staff .staffer#Alicia-San {
+    background-image: url(../img/commenter-2.jpg)
+}
+
+.staff-wrapper .staff .staffer#Pres-Aria {
+    background-image: url(../img/commenter-3.jpg)
+}
+
+.staff-wrapper .staff .staffer#Grandma {
+    background-image: url(../img/commenter-4.jpg)
+}
+
+.staff-wrapper .staff .staffer:hover {
+    border-radius: 15%;
+}
+
+.staff-wrapper .staff blockquote {
+    text-align: right;
+    font-weight: bold;
+    color: #FDB353;
+    margin-top: 1em;
+}
+
+
+/* End Zadatak: Krug */
+
+
+/* End Staff */
+
+footer {
+    height: 100vh;
+    background: #3C69AF url(../img/aria-company.png) left center no-repeat;
+    position: relative;
+    background-blend-mode: overlay;
+    overflow: hidden;
+}
+
+.footer-wrapper {
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-wrapper form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.footer-wrapper form::before {
+    content: '';
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: #F0F0F4;
+    border-radius: 15px;
+    opacity: .75;
+}
+
+.footer-wrapper form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.footer-wrapper form label {
+    font-weight: bold;
+    text-indent: 1ex;
+}
+
+.footer-wrapper form input,
+.footer-wrapper form select,
+.footer-wrapper form textarea {
+    ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 1em;
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+    resize: none;
+}
+
+.footer-wrapper form input[type="submit"] {
+    color: #F0F0F4;
+    background-color: #3C69AF;
+    padding: 1ex 0;
+    transition: letter-spacing .4s;
+}
+
+.footer-wrapper form input[type="submit"]:hover {
+    letter-spacing: .25ex;
+    cursor: pointer;
+}
+
+.footer-wrapper span {
+    color: #F0F0F4;
+    margin: 40px 0 20px;
+    text-align: right;
+}
