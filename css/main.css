@@ -138,6 +138,11 @@ ul.main-nav {
     overflow: hidden;
 }
 
+.content dl dt:not(:first-of-type) {
+    padding-top: 1rem;
+    border-top: 2px solid black;
+}
+
 .content dl dd {
     margin: 1rem 0;
     text-indent: 3ex;
