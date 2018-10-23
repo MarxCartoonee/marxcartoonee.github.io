@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+#accordion>h3,
+#accordion>div {
+    width: 75%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #adadad, transparent);
+}
+
+dl {
+    width: 75%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+dt {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+dd {
+    margin: 1em 0;
+    text-indent: 5ex;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 500px;
+}
+
+input,
+textarea {
+    border: none;
+    box-shadow: 0 0 3px #adadad, 2px 2px 3px #adadad;
+    margin: .5em;
+    padding: 1ex;
+    width: calc(100% - 1em);
+}
+
+input {
+    height: 2.5em;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    font-variant: small-caps;
+    max-width: 90px;
+    box-shadow: none;
+}
+
+input[type=number] {
+    text-align: right;
+    -moz-appearance: textfield;
+    inline-size: 6ch;
+}
+
+input.output,
+textarea.output {
+    color: #fff;
+    background-color: tomato;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.cen {
+    justify-content: center;
+    align-items: center;
+}

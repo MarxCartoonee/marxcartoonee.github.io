@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet prefetch" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin=" anonymous"></script>
+        <script src="js/other.js"></script>
+        <script src="js/funame.js"></script>
+        <title>JS Boot Camp - More</title>
+    </head>
+
+    <body>
+        <div id="accordion">
+            <h3>Zadatak 1 - Bigger Number</h3>
+            <div id="zadatak1">
+                <form class="flex col cen">
+                    <fieldset class="input flex row">
+                        <legend>Input two numbers</legend>
+                        <input class="input" type="number" name="" id="numberA" value=0>
+                        <input class="input" type="number" name="" id="numberB" value=0>
+                    </fieldset>
+                    <fieldset class="output flex row">
+                        <legend>The larger of the two numbers is</legend>
+                        <input class="output" type="text" readonly>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 2 - Bigger Number Redux</h3>
+            <div id="zadatak2">
+                <form class="flex col cen">
+                    <fieldset class="input">
+                        <legend>Input a series of numbers</legend>
+                        <input type="text" class="input" id="numArr">
+                    </fieldset>
+                    <fieldset class="output">
+                        <legend>The largest number is</legend>
+                        <input type="text" class="output" readonly>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 3 - String Spam</h3>
+            <div id="zadatak3">
+                <form class="flex col cen">
+                    <fieldset class="input flex row">
+                        <legend>Input a string and number</legend>
+                        <input type="text" class="input" id="stringIn">
+                        <input type="number" class="input" id="numIn" value=1 min=1>
+                    </fieldset>
+                    <fieldset class="output">
+                        <legend>The string repeats that many times</legend>
+                        <textarea name="" id="stringOut" cols="30" rows="10" class="output" readonly></textarea>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 4 - Word Counter, Min & Max</h3>
+            <div id="zadatak4">
+                <form class="flex col cen">
+                    <fieldset class="input flex row">
+                        <legend>Input a sentence</legend>
+                        <input type="text" class="input" id="sentence">
+                    </fieldset>
+                    <fieldset class="output flex row">
+                        <legend></legend>
+                        <input type="number" class="output" id="wordCount" readonly>
+                        <input type="text" class="output" id="maxWord" readonly>
+                        <input type="text" class="output" id="minWord" readonly>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 5 - Person</h3>
+            <div id="zadatak5">
+                <form class="flex row cen">
+                    <fieldset class="input flex col">
+                        <legend>Input your first and last name, hair color and age</legend>
+                        <input type="text" class="input" id="firstName" placeholder="First Name">
+                        <input type="text" class="input" id="lastName" placeholder="Last Name">
+                        <input type="text" class="input" id="hairColor" placeholder="Hair Color">
+                        <input type="number" class="input" id="age" min=1 placeholder="Age">
+                    </fieldset>
+                    <fieldset class="output flex col">
+
+                    </fieldset>
+                    <input type="submit" value="Reset">
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 6 - Censorship</h3>
+            <div id="zadatak6">
+                <form class="flex col cen">
+                    <fieldset class="input">
+                        <legend>Input a sentence</legend>
+                        <input type="text" class="input" id="naughtySentence">
+                    </fieldset>
+                    <fieldset class="output">
+                        <legend>The words "grom" and "pakao" get censored</legend>
+                        <input type="text" class="output" id="niceSentence" readonly>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 7 - Modular Censorship</h3>
+            <div id="zadatak7">
+                <form class="flex col cen">
+                    <fieldset class="input">
+                        <legend>Input a sentence and a list of bad words</legend>
+                        <input type="text" class="input" id="badSentence">
+                        <input type="text" class="input" id="badWords">
+                    </fieldset>
+                    <fieldset class="output">
+                        <legend>The bad words get censored</legend>
+                        <input type="text" class="output" id="goodSentence" readonly>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+
+                </form>
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 8 - Quarter Window</h3>
+            <div id="zadatak8">
+
+                <!-- <hr> -->
+            </div>
+            <h3>Zadatak 9 - Capitalization</h3>
+            <div id="zadatak9">
+                <form class="flex col cen">
+                    <fieldset class="iput flex row">
+                        <legend>Input a string</legend>
+                        <input type="text" class="input" id="toCapitalize">
+                    </fieldset>
+                    <fieldset class="output">
+                        <legend>The string becomes uppercase</legend>
+                        <textarea name="" id="" cols="30" rows="10" class="output" id="loudNoises" readonly></textarea>
+                    </fieldset>
+                    <input type="submit" value="Reset">
+                </form>
+            </div>
+            <h3>FuNames</h3>
+            <div id="fuNames">
+                <form class="flex col cen">
+                    <fieldset>
+                        <legend></legend>
+                        <input type="text" class="output" id="fuName" readonly>
+                    </fieldset>
+
+                    <!-- <input type="submit" class="submit" value="Generate"> -->
+                </form>
+                <button class="submit">Generate</button>
+            </div>
+        </div>
+    </body>
+
+</html>
