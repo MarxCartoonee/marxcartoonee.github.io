@@ -24,14 +24,14 @@ $(() => {
     '🕤',
     '🕥',
     '🕦',
-    '🕧'
+    '🕧',
   ];
 
   let getRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
-  let capitalizeStr = str => {
+  let capitalizeStr = (str) => {
     return str
       .split('')
       .map((v, i) => (i === 0 ? v.toUpperCase() : v))
@@ -59,7 +59,8 @@ $(() => {
     return name;
   };
 
-  $('#fuNames button.submit').click(() =>
-    $('#fuNames input.output').val(generateName())
-  );
+  $('#fuNames input.submit').click((e) => {
+    e.preventDefault();
+    $('#fuNames input.output').val(generateName());
+  });
 });
