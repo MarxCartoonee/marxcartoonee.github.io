@@ -1,7 +1,7 @@
 $(() => {
   $('#accordion').accordion({
     collapsible: true,
-    heightStyle: 'content',
+    heightStyle: 'content'
   });
 
   $('#zadatak1 input.input').on('input', () =>
@@ -64,13 +64,13 @@ $(() => {
             height: ${$(window).height() / 2}px;
             text-align: center;
             position: absolute;
-            z-index: 999;`,
+            z-index: 999;`
     }).draggable()
   );
   $(window).resize(() =>
     $('#quarterWindow').css({
       width: `${$(window).width() / 2}px`,
-      height: `${$(window).height() / 2}px`,
+      height: `${$(window).height() / 2}px`
     })
   );
   $('#zadatak9 input.input').on('input', () =>
@@ -82,10 +82,10 @@ $(() => {
   );
 
   $('input[type=submit]').button({
-    icon: 'ui-icon-arrowrefresh-1-e',
+    icon: 'ui-icon-arrowrefresh-1-e'
   });
 
-  $('input[value=Reset]').click((e) => {
+  $('input[value=Reset]').click(e => {
     e.preventDefault();
     $(e.target)
       .parent('form')[0]
@@ -103,7 +103,7 @@ $(() => {
 
 // Zadatak 1
 let getMax = (a, b) => Math.max(a, b),
-  getMaxArr = (nums) => {
+  getMaxArr = nums => {
     for (n of nums) if (typeof parseInt(n.trim()) !== 'number') return false;
     return Math.max(...nums);
   },
@@ -114,7 +114,7 @@ let getMax = (a, b) => Math.max(a, b),
     }
     return output;
   },
-  sentencing = (s) => {
+  sentencing = s => {
     let words = s
         .replace(/[.!\?:;'"\(\)\/]+/g, ' ')
         .trim()
@@ -124,7 +124,7 @@ let getMax = (a, b) => Math.max(a, b),
     return {
       words: words.length,
       lWord: wlens[Math.max(...Object.keys(wlens))],
-      sWord: wlens[Math.min(...Object.keys(wlens))],
+      sWord: wlens[Math.min(...Object.keys(wlens))]
     };
   },
   whoAmI = (fName, lName, hColor, age) => {
@@ -151,7 +151,7 @@ let getMax = (a, b) => Math.max(a, b),
       )
     );
   },
-  censorship = (naughtySentence) => {
+  censorship = naughtySentence => {
     return naughtySentence.replace(/grom|pakao/gi, '***');
   },
   advertiserFriendly = (badSentence, badWords) => {
@@ -160,15 +160,15 @@ let getMax = (a, b) => Math.max(a, b),
     console.log(badWords);
     return badSentence.replace(new RegExp(badWords.join('|'), 'gi'), '***');
   },
-  swedish = (str) => {
+  swedish = str => {
     const toUpper = str === str.toUpperCase();
 
     str = str
       .split(' ')
-      .map((w) =>
+      .map(w =>
         w
           .split('')
-          .map((c) => (c === 'o' ? 'ø' : c === 'O' ? 'Ø' : c))
+          .map(c => SvenskLetters[c] || c)
           .join('f')
       )
       .join(' ');
@@ -177,7 +177,7 @@ let getMax = (a, b) => Math.max(a, b),
 
     return str;
   },
-  dutch = (str) => {
+  dutch = str => {
     const toUpper = str === str.toUpperCase();
 
     str = str
@@ -189,14 +189,21 @@ let getMax = (a, b) => Math.max(a, b),
 
     return str;
   },
-  replaceNilesy = (match) => {
+  replaceNilesy = match => {
     return `${match.slice(0, 1)}isley`;
   },
-  replaceS = (match) => {
+  replaceS = match => {
     return `${match.slice(0, 1)}${Array(match.length)
       .fill('h')
       .join('')}`;
   },
-  replaceG = (match) => {
+  replaceG = match => {
     return match === match.toUpperCase() ? 'K' : 'k';
   };
+
+const SvenskLetters = Object.freeze({
+  o: 'ø',
+  O: 'Ø',
+  a: 'å',
+  A: 'Å'
+});
