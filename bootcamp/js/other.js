@@ -99,6 +99,12 @@ $(() => {
   $('#dutch input.input').on('input', () =>
     $('#dutch input.output').val(dutch($('#notDutchString').val()))
   );
+
+  $('#rot13 input.input').on('input', () =>
+    $('#rot13 input.output').val(
+      rotN($('#rotString').val(), $('#rotNum').val())
+    )
+  );
 });
 
 // Zadatak 1
@@ -200,6 +206,27 @@ let getMax = (a, b) => Math.max(a, b),
   replaceG = match => {
     return match === match.toUpperCase() ? 'K' : 'k';
   };
+
+rotN = (string, n) => {
+  n = parseInt(n, 10);
+  return string
+    .split('')
+    .map(c => c.charCodeAt(0))
+    .map(cC => {
+      if (cC >= 65 && cC <= 90) {
+        cC = mod(cC - 65 + n) + 65;
+      } else if (cC >= 97 && cC <= 122) {
+        cC = mod(cC - 97 + n) + 97;
+      }
+      return cC;
+    })
+    .map(cC => String.fromCharCode(cC))
+    .join('');
+};
+
+mod = n => {
+  return ((n % 26) + 26) % 26;
+};
 
 const SvenskLetters = Object.freeze({
   o: 'ø',
