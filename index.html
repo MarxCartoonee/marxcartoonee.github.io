@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:900"
+      rel="stylesheet"
+    />
     <title>Cartoonee Creations</title>
-</head>
 
-<body>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+  </head>
+
+  <body>
     <div class="container">
-        <header>
-            <h1>Cartoonee Creations</h1>
-        </header>
+      <header>
+        <h1>Cartoonee Creations</h1>
+      </header>
 
-        <nav>
-            <ul class="nav main-nav">
-                <li class="youarehere"><a href="/"><i class="fas fa-home"></i><span>Home</span></a></li>
-                <li><a href="/"><i class="fas fa-paint-brush"></i><span>Art</span></a></li>
-                <li><a href="/web"><i class="fas fa-code"></i><span>Web</span></a></li>
-                <li><a href="/"><i class="fas fa-id-card"></i><span>About</span></a></li>
-                <li><a href="/"><i class="fas fa-envelope-open"></i><span>Contact</span></a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="nav main-nav">
+          <li class="youarehere">
+            <a href="/"><i class="fas fa-home"></i><span>Home</span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fas fa-paint-brush"></i><span>Art</span></a>
+          </li>
+          <li>
+            <a href="/web"><i class="fas fa-code"></i><span>Web</span></a>
+          </li>
+          <li>
+            <a href="/"><i class="fas fa-id-card"></i><span>About</span></a>
+          </li>
+          <li>
+            <a href="/"
+              ><i class="fas fa-envelope-open"></i><span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-        <div class="content">
-            <img src="img/face.png" alt="Marx Cartoonee" class="splash">
-        </div>
+      <div class="content">
+        <img src="img/face.png" alt="Marx Cartoonee" class="splash" />
+      </div>
 
-        <footer>
-            <span>Design and content</span><span>&copy; Marx Cartoonee 2011 - 2018</span>
-        </footer>
+      <footer>
+        <span>Design and content</span
+        ><span>&copy; Marx Cartoonee 2011 - 2018</span>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
